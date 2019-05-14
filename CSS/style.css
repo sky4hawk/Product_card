@@ -1,0 +1,97 @@
+
+body{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/BG_1.jpg);
+	background-repeat: no-repeat;
+	
+}
+body{
+	font-family: 'Roboto' , sans-serif;
+	line-height: 1.7;
+}
+
+.nike-container{
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.nike-header{
+	width: 100%;
+	left: 0;
+}
+
+.nike-header .nike-container{
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	    -webkit-align-items: center;
+	            align-items: center;
+}
+
+.logo{
+	margin: 0;
+}
+
+.menu__item{
+	overflow: hidden;
+}
+
+.menu{
+	color: #fff;
+	display: flex;
+	list-style: none;
+	
+}
+
+.menu__item + .menu__item{
+	margin-left: 30px;
+}
+
+.menu__link{
+	position: relative;
+	
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 500;
+	
+}
+
+.menu__link:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateX(-100%);
+	width: 100%;
+    height: 2px;
+    background-color: #fff;	
+    display: inline-block;
+    
+    transition: left 0.2s, height .5s, transform .75s;
+    transition-timing-function: cubic-bezier(0.42, 0, 0, 1.12)
+}
+
+.menu__link:hover,
+.menu__link:focus{
+	color: #fff;
+}
+
+.menu__link:hover:after,
+.menu__link:focus:after{
+	transform: translateX(0);
+	height: 1px;
+    
+}
+
+.ba-nike{
+    background-color: #fba209;
+    height: 30px;
+    display: inline-flex;
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1.25em;
+}
