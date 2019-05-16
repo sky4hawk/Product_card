@@ -2,7 +2,7 @@
 body{
 	width: 100%;
 	height: 100vh;
-	background-image: url(../img/BG_1.jpg);
+	background-image: url(../img/bg-space.jpg);
 	background-repeat: no-repeat;
 	
 }
@@ -64,7 +64,7 @@ body{
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	transform: translateX(-100%);
+	transform: translateX(-110%);
 	width: 100%;
     height: 2px;
     background-color: #fff;	
@@ -82,7 +82,7 @@ body{
 .menu__link:hover:after,
 .menu__link:focus:after{
 	transform: translateX(0);
-	height: 1px;
+	height: 2px;
     
 }
 
@@ -93,5 +93,68 @@ body{
     color: #fff;
     align-items: center;
     text-decoration: none;
-    padding: 0 1.25em;
+    padding: 0 0.65em;
+}
+
+
+.ba-title{
+	display: flex;
+	margin: auto;
+	width: 90%;
+	min-height: 430px;
+	background-color: #FFF;
+}
+
+
+.ba-text{
+	padding: 30px 20px 0px;
+}
+
+.ba-title-text{
+	margin: 0;
+	padding: 0 20px;
+	font-family: 'Roboto' , sans-serif;
+	line-height: 1.7;
+}
+
+.title-text{
+	display: flex;
+}
+
+.Huarache{
+	padding: 40px;
+	margin: 40px;
+	
+}
+
+
+
+
+
+
+.rating_block {
+  width: 125px;
+  height: 25px;
+}
+
+.rating_block input[type="radio"] {
+  display: none;
+}
+
+.label_rating {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/Rating.jpg) no-repeat 50% 0;
+  cursor: pointer;
+ }
+
+
+.rating_block .label_rating:hover, 
+.rating_block .label_rating:hover ~ .label_rating, 
+.rating_block input[type="radio"]:checked ~ .label_rating {
+  
+  background-position: 90% -25px;
+  background: url(../img/Rating-none.jpg) no-repeat 50% 0;
 }
